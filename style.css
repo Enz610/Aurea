@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #C8D5CC;
+    color: #292929;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    border-radius: 12px;
+    background-color: #F5F1E8;
+}
+
+header {
+    background-color: #172923;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.teste {
+    color: #C5A572;
+    margin: 0;
+    letter-spacing: 5px;
+    font-size: 36px;
+}
+
+header p {
+    color: #E5E0D6;
+    margin: 5px 0 18px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F5F1E8;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #C5A572;
+    color: #FFFFFF;
+}
+
+.teste1 {
+    background-color: #E8E0D1;
+    color: #172923;
+    padding: 12px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #D5CBB9;
+    margin: 40px 0;
+}
+
+section > h2 {
+    color: #172923;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+section > p {
+    margin-bottom: 25px;
+}
+
+.banner {
+    min-height: 450px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+
+    background-image: linear-gradient(90deg, rgba(15, 29, 23, 0.85), rgba(15, 29, 23, 0.15)), url("imagem do ChatGPT 16 de out. de 2026, 16_52_57.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-conteudo {
+    max-width: 580px;
+}
+
+.subititulo {
+    color: #C5A572;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.banner h1 {
+    color: #FFFFFF;
+    font-size: clamp(34px, 5vw, 54px);
+    margin: 15px 0;
+    line-height: 1.15;
+}
+
+.decriçao {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+.botao-banner {
+    display: inline-block;
+    background-color: #C5A572;
+    color: #172923;
+    padding: 13px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-banner:hover {
+    background-color: #A88C5F;
+    transform: translateY(-2px);
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(23, 41, 35, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #E5DDCF;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(23, 41, 35, 0.14);
+}
+
+.card img {
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+    width: 100%;
+    height: 190px;  
+}
+
+.card h3 {
+    color: #172923;
+    font-size: 21px;
+    margin: 15px 0 8px;
+    visibility: visible;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 8px 0;
+    visibility: visible;
+}
+
+.selo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+
+    background-color: #C5A572;
+    color: #172923;
+
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.preco {
+    color: #172923;
+    font-size: 16px !important;
+    font-weight: bold;
+    margin-top: 15px !important;
+}
+
+#sobre,
+#contato {
+    line-height: 1.8;
+}
+
+#contato ul {
+    padding-left: 22px;
+}
+
+#contato li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 950px) {
+    .container-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .banner {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 18px 14px;
+    }
+
+    .teste {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .banner {
+        padding: 24px;
+        min-height: 380px;
+        background-position: center;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+    .container-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    section > h2 {
+        font-size: 26px;
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+}
+
+.banner .descriçao {
+    color: #F5F1E8;
+}
