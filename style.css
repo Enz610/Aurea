@@ -87,7 +87,7 @@ section > p {
     border-radius: 12px;
     overflow: hidden;
 
-    background-image: linear-gradient(90deg, rgba(15, 29, 23, 0.85), rgba(15, 29, 23, 0.15)), url("imagem do ChatGPT 16 de out. de 2026, 16_52_57.jpg");    
+    background-image: linear-gradient(90deg, rgba(15, 29, 23, 0.85), rgba(15, 29, 23, 0.15)), url("https://enz610.github.io/Aurea/Imagem%20do%20ChatGPT%2016%20de%20out.%20de%202026%2C%2016_52_57.jpg");    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
